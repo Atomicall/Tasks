@@ -1,0 +1,8 @@
+Before any manipulations, I would check that my login and server address are correct.
+1. At the first step I would try to run "ssh -vvv [user]@[adress]" and see the console log. The "-vvv" parameter means verbose output.
+According this output, I can figure out, on which step exactly connection fails.
+2. If the error is related with availability of the server, I would check the connection with "ping" command
+3. Then I would check the default ssh port, which is 22
+4. At this step I'll check my ssh Pubic key
+5. Then - I'll check my IdentityFile and Private key
+6. I'll make sure that all files from .ssh dir have proper permissions.
